@@ -1,0 +1,42 @@
+.NodeAddForm {}
+
+.NodeAddForm-Fields {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.NodeAddForm-Container {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.NodeAddForm-Container {
+  flex-basis: 40%;
+}
+
+.NodeAddForm-Container:last-child {
+  flex-basis: 15%;
+}
+
+.NodeAddForm-Label {
+  display: block;
+  box-sizing: inherit;
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+}
+
+.NodeAddForm-Input, .NodeAddForm-Button {
+  min-height: 33px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid lightslategray;
+  box-sizing: inherit;
+}
+
+.NodeAddForm-Input {
+  font-size: 1.1rem;
+}
+
+.NodeAddForm-Button {}

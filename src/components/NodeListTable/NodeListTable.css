@@ -1,0 +1,15 @@
+.NodeListTable {
+  margin-top: 25px;
+  padding: 10px 15px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.NodeListTable-Title{
+  display: flex;
+  justify-content: space-between;
+}
+.NodeListTable-List{
+  padding-left: 0;
+  list-style-type: none;
+}

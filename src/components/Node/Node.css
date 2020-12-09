@@ -1,0 +1,12 @@
+.Node {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Node-Actions{
+
+}
+.Node-Actions_edit, .Node-Actions_delete{
+  display: inline-block;
+  margin-right: 10px;
+}

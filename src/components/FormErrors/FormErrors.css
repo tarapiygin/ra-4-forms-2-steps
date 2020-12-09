@@ -1,0 +1,14 @@
+.Form-Errors {
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.Form-Error {
+  flex-basis: 40%;
+  padding: 5px;
+  background-color: lightcoral;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
