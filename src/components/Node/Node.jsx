@@ -10,7 +10,7 @@ export default function Node(props) {
   return (
     <li className='Node'>
       <div className='Node-Date'>{DateTime.fromMillis(date).setLocale('ru').toFormat('dd.MM.yyyy')}</div>
-      <div className='Node-Distance'>{distance}</div>
+      <div className='Node-Distance'>{distance.toFixed(1)}</div>
       <div className='Node-Actions'>
         <div className='Node-Actions_edit' onClick={onEditNode}>✎</div>
         <div className='Node-Actions_delete' onClick={onDeleteNode}>X</div>

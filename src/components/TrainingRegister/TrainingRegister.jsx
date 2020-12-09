@@ -58,7 +58,7 @@ export default function TrainingRegister() {
       return;
     };
     const [d, m, y] = state.form.date.split('.');
-    const date = new Date(y, m-1, d).getTime();
+    const date = new Date(y, m - 1, d).getTime();
     const { distance } = state.form;
     setState((state) => {
       const newNodeList = [];
@@ -66,7 +66,11 @@ export default function TrainingRegister() {
       const node = newNodeList.find((n) => n.id === state.editableNodeId || n.date === date);
       if (node) {
         node.date = date;
-        node.distance = distance;
+        if (state.editableNodeId !== null) {
+          node.distance = Number.parseFloat(distance);
+        } else {
+          node.distance += Number.parseFloat(distance);
+        }
       } else {
         newNodeList.push(new Node(date, distance));
         newNodeList.sort((a, b) => b.date - a.date);
